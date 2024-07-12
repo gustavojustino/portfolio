@@ -1,0 +1,175 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-container > * {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.main-container
+.animated {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.summary-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-wrapper
+.developer-name {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+.summary-wrapper
+.developer-jobrole {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.summary-wrapper
+.developer-info {
+  text-align: justify;
+}
+
+.p-hyperlink {
+  font-weight: 500;
+}
+
+.gradient-line {
+  background: linear-gradient(to right, var(--color-gradient-start), var(--color-gradient-end));
+  border: none;
+  height: 1px;
+  width: 100%;
+}
+
+.stacks-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.vertical-line {
+  border: none;
+  background-color: var(--theme-accent-color);
+  height: 50px;
+  width: 10px;
+}
+
+.stacks-title {
+  font-size: 1em;
+  font-weight: bold;
+  flex: 1;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.stacks-info {
+  margin: 0;
+  text-align: justify;
+}
+
+.stacks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.stack {
+  align-items: center;
+  display: flex;
+  flex: 1 1 calc(33.333% - 20px);
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.stack-icons {
+  display: flex;
+  font-size: 2em;
+  gap: 10px;
+}
+
+.stack h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.stack p {
+  text-align: justify;
+}
+
+.projects-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+
+.projects-title {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.projects-container
+.col {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  transition:  transform 0.6s ease;
+}
+
+.projects-container
+.col:hover {
+  transform: scale(0.9);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+  .stack {
+    flex: 1 1 calc(50.333% - 20px);
+  }
+
+  .projects-container
+  .col {
+    flex: 1 1 calc(66.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main-container {
+    margin-left: 0;
+  }
+
+  .stack {
+    flex: 1 1 calc(66.333% - 20px);
+  }
+
+}

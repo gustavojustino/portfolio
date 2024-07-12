@@ -1,0 +1,31 @@
+<aside class="sidebar" [ngClass]="{ 'hidden' : isSidebarHidden }" role="complementary">
+  <section class="profile-section">
+    <img class="profile-picture" src="https://media.licdn.com/dms/image/C4D03AQFXydl3h0MBIQ/profile-displayphoto-shrink_800_800/0/1654542936506?e=1725494400&v=beta&t=9ezbIcgwUTdaL-B971BB2pKAcb614nqEZrxs-Lfb9xk" alt="Foto de perfil">
+    <h2 class="profile-name">Luis Gustavo</h2>
+    <h3 class="profile-title">Olá, meu nome é Luis Gustavo e sou desenvolvedor de software fullstack, este é meu site pessoal. <br>Seja bem vindo!</h3>
+  </section>
+
+  <nav class="navprofile-content">
+    <app-header></app-header>
+  </nav>
+
+
+  <div class="social-icons">
+    <a href="mailto:gustavodasilvajustino@hotmail.com" class="social-icon" aria-label="email">
+      <i class="fa-solid fa-square-envelope"></i>
+    </a>
+    <a href="https://github.com/gustavojustino/" class="social-icon" aria-label="github">
+      <i class="fab fa-square-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/luis-gustavorj/" class="social-icon" aria-label="linkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+
+
+  <div class="toogle-theme">
+    <button type="button" class="btn btn-secondary btn-rounded" data-mdb-ripple-init data-mdb-ripple-color="dark" (click)="setLightTheme()">Light</button>
+    <button type="button" class="btn btn-dark btn-rounded" data-mdb-ripple-init (click)="setDarkTheme()">Dark</button>
+  </div>
+</aside>
+<button class="menu-button" (click)="toogleSidebar()" [ngClass]="{'opacity-low' : isSidebarHidden}"><i class="fa-solid fa-bars"></i></button>

@@ -1,0 +1,15 @@
+footer {
+  margin-left: 250px;
+  text-align: center;
+}
+
+.footer-copyright {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer {
+    margin-left: 0px;
+  }
+}

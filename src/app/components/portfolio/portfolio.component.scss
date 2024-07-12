@@ -1,0 +1,88 @@
+.content {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio-container > * {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.portfolio-container .animated {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.portfolio-container {
+  margin-left: 250px;
+  height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+
+.portfolio-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.tabs-container {
+  max-width: 1000px;
+  margin-top: 50px;
+  width: 60%;
+}
+
+.tabs {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.377);
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: font-weight 0.1s;
+}
+
+.tab:hover, .tab.active {
+  font-weight: bold;
+}
+
+.tabs-content {
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: flex;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-container {
+    margin: 0;
+  }
+}
