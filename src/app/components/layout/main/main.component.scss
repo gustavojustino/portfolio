@@ -143,6 +143,12 @@
 .col:hover {
   transform: scale(0.9);
 }
+.projects-container .card-title {
+  text-align: center;
+}
+.projects-container .card-text {
+  text-align: justify;
+}
 
 .button {
   display: flex;
