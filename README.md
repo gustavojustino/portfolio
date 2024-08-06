@@ -1,3 +1,4 @@
+![MIT LICENSE](https://img.shields.io/github/license/gustavojustino/carroapi)
 # <h1 align="center">Meu Portfólio</h1>
 
 <p align="center">Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido utilizando Angular, TypeScript e Bootstrap. O objetivo é apresentar meus projetos e experiências profissionais de forma visualmente atraente e acessível em um único lugar.</p>
