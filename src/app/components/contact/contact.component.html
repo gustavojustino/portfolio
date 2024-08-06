@@ -2,27 +2,27 @@
   <app-sidebar></app-sidebar>
 
   <div class="form-container">
-    <form class="contact-form">
+    <form class="contact-form" [formGroup]="FormData" (ngSubmit)="onSubmit()">
       <h2>Contato</h2>
       <P>Envie sua mensagem através do formulário abaixo.</P>
 
       <div class="form-group">
-        <input type="text" id="name" name="name" placeholder=" " required>
+        <input type="text" id="name" name="name" class="form-control" formControlName="Fullname" required>
         <label for="name">Nome</label>
       </div>
 
       <div class="form-group">
-        <input type="email" id="email" name="email" placeholder=" " required>
+        <input type="email" id="email" name="email" class="form-control" formControlName="Email" required>
         <label for="email">Email</label>
       </div>
 
       <div class="form-group">
-        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+        <textarea id="message" name="message" rows="5" class="form-control" formControlName="Message" required></textarea>
         <label for="message">Mensagem...</label>
       </div>
 
       <div class="form-button">
-        <button type="submit">Enviar</button>
+        <button type="submit" [disabled]="!FormData.valid">Enviar</button>
       </div>
     </form>
   </div>
