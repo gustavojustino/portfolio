@@ -2,7 +2,8 @@
 # Meu Portfólio
 
 > <p align="center">Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido utilizando Angular, TypeScript e Bootstrap. O objetivo é apresentar meus projetos e experiências profissionais de forma visualmente atraente e acessível em um único lugar.</p>
-![Website em Angular, Typescript, Bootstrap e HTML5](https://i.ibb.co/N2wwgPV/Captura-de-tela-2024-08-07-014801.png)
+![Website em Angular, Typescript, Bootstrap e HTML5](https://i.ibb.co/7zDFqmk/Captura-de-tela-2024-08-07-014801.png)
+
 
 ## 🌐 Demonstração
 
