@@ -1,7 +1,8 @@
 ![MIT LICENSE](https://img.shields.io/github/license/gustavojustino/carroapi)
-# <h1 align="center">Meu Portfólio</h1>
+# Meu Portfólio
 
-<p align="center">Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido utilizando Angular, TypeScript e Bootstrap. O objetivo é apresentar meus projetos e experiências profissionais de forma visualmente atraente e acessível em um único lugar.</p>
+> <p align="center">Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido utilizando Angular, TypeScript e Bootstrap. O objetivo é apresentar meus projetos e experiências profissionais de forma visualmente atraente e acessível em um único lugar.</p>
+![Website em Angular, Typescript, Bootstrap e HTML5](https://i.ibb.co/N2wwgPV/Captura-de-tela-2024-08-07-014801.png)
 
 ## 🌐 Demonstração
 
@@ -68,7 +69,7 @@ Pré-requisitos
    ```bash
    ng serve
    ```
-   A aplicação estará disponível em http://localhost:4200/. OBS: O ranger padrão é 4200.
+   > <p align=center>A aplicação estará disponível em http://localhost:4200/. OBS: O ranger padrão é 4200.</p>
 
 ## 🔍 Funcionalidades
 - Portfólio: Exibe meus projetos com descrições detalhadas e links para repositórios e demos.
